@@ -1,0 +1,414 @@
+<!DOCTYPE html5>
+<html lang="en-US">		<!-- Beginning of .html file as well 
+as the language, and doc type (HTML) specification  --> 
+	<head> <!-- You will not see this part
+	(it's what happens behind the scenes) --> 
+	
+		<meta charset="utf-8"/>
+		<title> The Basement </title> <!-- Title of Tab -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 
+		<!-- The following <link> tag allows the HTML
+		to communicate with a .css file called 
+		"styles.css" --> 
+		<link rel="stylesheet" href="blueberry.css"/>
+		
+		<!-- Picture of Tab -->
+		<link rel="icon"	 
+    	 type="image/png" 
+     	href="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/magic-marker-icons-people-things/115851-magic-marker-icon-people-things-stairs.png">
+		
+		<!-- Beginning of a crap ton of .css web styling to make
+		the page look cool (specifically for a computer viewer) --> 
+		
+		<style type="text/css">
+		* {
+			margin:0;	
+			border:0;	
+			padding:0;
+		}
+		body {
+			background-image: url("https://s-media-cache-ak0.pinimg.com/originals/a3/75/e0/a375e01f57d44921dc0bb7a464941c12.jpg");
+			font: 14px/20px Arial, San-serif;
+			color: #EDE1F2;
+			margin: 0;
+		}
+		h1 {
+			text-align: center;
+			font-size: 180%;
+			line-height: 120%;
+			padding: 0% 0;
+			margin:50;
+		}
+		h2 {
+			text-decoration: underline;	
+			line-height:280%;	
+			padding-left: 2%;
+		}
+		h3 {
+			line-height:110%;	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+		}
+		h4 {
+			text-align: center;
+			color:lightgray;
+			opacity:0.80;
+			margin:-25;
+		}
+		p {
+			padding: 1%;
+		}
+		img {
+			text-align: center;
+			max-width: 100%;
+			height: auto;
+			width: auto;
+		}
+		a {
+			color:#EDE1F2;
+			text-decoration: none;	
+			font-weight: bold;
+		}
+		a:hover {
+			color:#C867F0;	
+			text-decoration: underline;
+		}
+		header {
+			background: #33014A;
+			width: 100%;
+			height: 110px;
+			position: fixed;
+			top:0;
+			left: 0;
+			z-index: 100;
+			opacity: 0.90;
+		}
+		#logo {
+			margin: 15px;
+			float: left;
+			width: 64px;
+			height: 64px;
+			background: url("http://vignette2.wikia.nocookie.net/cookieclicker/images/9/99/Mine_new.png/revision/latest?cb=20130828030602") no-repeat center;
+		}
+		nav {
+			float: 
+			right;	
+			padding: 35px 20px 20px 0;
+		}
+		#menu-icon {
+			display: hidden;
+			width: 40px;
+			height: 40px;
+			background: url("http://www.w3newbie.com/wp-content/uploads/icon.png") center;	
+		}
+		a:hover#menu-icon {
+			border-radius: 4px 4px 0 0;
+		}
+		ul {
+			list-style:none;
+		}
+		nav ul li {
+			display: inline-block;	
+			float: left;	
+			padding: 10px;	
+		}
+		.current {
+			color: white;	
+			text-decoration: underline;
+		}
+		#doc {
+			margin:40px 0;
+		}
+		#content{
+			margin: 0 auto;	
+			max-width:1140px;
+			float: center;
+		}
+		.blueberry {
+			max-width: 600px;	
+			margin: -50px auto;
+		}
+		section	{
+			width:31%;	
+			float: left;	
+			margin 2% 2%;	
+			text-align: center;
+		}
+		.clear {
+				clear: both;
+		}
+		article {
+			float:left;
+			margin: 0 auto;
+			width: 50%;
+			height: auto;
+			padding: 4%;
+		}
+		aside {
+			float:right;
+			margin: 0 auto;
+			width: 35%;
+			height: auto;
+			padding: 3%;
+		}
+		aside ul li {
+			list-style: square
+		}
+		ul.goals li {
+			padding-left: 3%;
+		}
+		footer {
+			background: black;
+			width: 100%;
+			overflow: hidden;
+			opacity:0.75;
+		}
+		footer p, footer h3 {
+			color: white;
+		}
+		footer p a{
+			color:white;	
+			text-decoration:none;
+		}	
+		ul.social li {
+			display: inline;
+		}
+		ul.social li img {
+			height: 50px;
+		}
+		footer.second {
+			border-top: 3px solid white;
+			background: black;
+			max-height: 50px;
+			text-align: center;
+			opacity: 0.95;
+		}
+		
+		/* This is so the page looks good on smaller devices */ 
+		
+		@media screen and (max-width: 478px) {
+			body {
+				position: absolute;
+			}
+		}
+		@media screen and (max-width: 740px) {
+			header {
+				position: absolute;
+			}
+			#menu-icon {
+				display: inline-block;
+			}
+			nav ul, nav:active ul {
+				display:none;
+				position:absolute;
+				padding:20px;
+				background: black;
+				border: 1px solid white;
+				right: 20px;
+				top: 60px;
+				width: 35%;
+				border-radius: 2px 0 2px 2px;
+			}
+			nav li {
+				text-align: center;
+				width: 100%;
+				padding: 10px 0px;
+				margin: 0;
+			}
+			nav:hover ul {
+				display: block;
+			}
+			section {
+				float: left;
+				width: 100%
+				margin: 0;
+				padding: 0;
+			}
+			article {
+				float: left;
+				width: 100%
+				margin: 0;
+				padding: 0;
+			}
+			aside {
+				float: left;
+				width: 100%
+				margin: 0;
+				padding: 0;
+			}
+		}
+		</style>
+		
+		<!-- Now that the page is styled, we can write the html code.
+			(except the html is coded first then you style but if you're 
+			reading this from the top and you don't know that, well,
+			now you do! You're Welcome.. -->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script src="jquery.blueberry.js"></script>
+		<script>
+		$(window).load(function() {
+			$('.blueberry').blueberry();
+		});
+		</script>
+			
+		<!-- All <div class="#" allows us to style each section
+		of code (we do this not in the .html file but rather
+		the .css we linked this file to in the <head> of the html)
+		to make the html look less like an html and more like a website.-->
+
+	</head>
+	
+	<body> <!-- Beginning of Visual Elements --> 
+	
+		<header>	<!-- Begging of Header Chunk -->
+			<a href="#" id="logo"></a>
+			<nav>
+				<a href="#" id="menu-icon"></a>
+			<!-- A section of the page divided from
+		the rest. I will refere to them from now on as "chunks"
+		for ex: Nav Chunk --> 
+				<ul>	
+					<li><a href="index.html">Home</a></li>
+					<li><a href="updates.html">Updates</a></li>
+					<li><a href="carl.html">Carl</a></li>
+					<li><a href="games.html">Games</a></li>
+					<li><a href="memes.html">Memes</a></li>
+					<li><a href="buds.html">Buds</a></li>
+				</ul>
+			
+			<!--	<ul>
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Log In</a></li>
+		COMING SOON!		 (Add more nav functions here...) 
+				</ul> 	-->
+			
+			</nav>	<!-- End of Nav Chunk --> 
+		</header>	<!-- End of Header Chunk --> 
+		<br><br><br><br>
+		<div>
+			<h1 id="heading">Welcome!</h1>	
+			<h4 id="subheading">(what happens here... stays here)</h4>  
+			<!-- the id="   " within the <h#></h#> tag allows the .css file to 
+				identify a specific element of the html so that it can be 
+				styled and formated. --> 
+		</div>
+		<br><br><br>
+		
+		<!-- This will be an image slider --> 
+		<div id="doc">
+			<div id="content">
+				<div class="blueberry">
+					<ul class="slides">
+						<li><img src="<>" /></li>
+						<li><img src="https://i1.wp.com/springforwardmarketing.com/wp-content/uploads/2016/02/Tampa-Bay-Cat-Alliance.png?fit=2000%2C1200" /></li>
+						<li><img src="http://wallpapercave.com/wp/Htp6H7h.jpg" /></li>
+						<li><img src="https://ecowatchroar-img.rbl.ms/simage/https%3A%2F%2Fassets.rbl.ms%2F6463378%2F980x.jpg/2000,2000/TREN%2BicQ8JF5BKrH/img.jpg" /></li>
+						<li><img src="http://www.marcman.com/wp-content/uploads/2017/02/bigcat4.png" /></li>
+					</ul>
+				</div>
+			</div> 
+		</div> 
+		<br><br><br><br>
+		<section>	<!-- The following will be info on the site --> 
+			<img src="http://www.iconsdb.com/icons/preview/purple/pin-5-xxl.png" />
+			<h1> Location </h1>
+			<p>(earth)</p>
+		</section>
+		<section>
+			<img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/glossy-space-icons-people-things/062964-glossy-space-icon-people-things-stairs.png" />
+			<h1>Basement?</h1>
+			<p>(description here)</p>
+		</section>
+		<section>
+			<img src="http://www.iconsdb.com/icons/preview/purple/mobile-phone-8-xxl.png" />
+			<h1> Mobile </h1>
+			<p>Check us out on your mobile phone! (The coding was a pain to figure out so appreciate it...)</p>
+			<br><br><br><br><br><br>
+		</section>
+		
+		<div class="clear"></div>
+		<!-- End of Info -->
+		
+		<!-- This will be an image on the left with goals in a list on the right -->
+		<article>
+			<img src="http://www.ovencleanteam.co.uk/wp-content/uploads/2015/03/checklist-443126_1280.png" />
+		<br><br>
+		</article>
+		
+		<aside>
+			<h2>Check List</h2>
+			<ul class "goals">
+				<li><h3>Learn html, css, and Javascript in and out</h3></li>
+				<br>
+				<li><h3>Create a visually pleasing page</h3></li>
+				<br>
+				<li><h3>Create a functional page</h3></li>
+				<br>
+				<li><h3>Throw some easter eggs in</h3></li>
+				<br>
+				<li><h3>Throw some fun stuff that serves no purpose, 
+							but is still fun</h3></li>
+				<br>			
+			</ul>
+		</aside>
+		<!-- End of Goals -->
+
+		<!-- Further Information -->
+		<div class="clear"></div>
+		<section>
+			<img src="http://www.iconsplace.com/icons/preview/purple/message-256.png" />
+			<h1> Email </h1>
+			<p>(description here)</p>
+		</section>
+		<section>
+			<img src="http://www.iconsplace.com/icons/preview/purple/mouse-left-click-256.png" />
+			<h1> Explore! </h1>
+			<p>(description here)</p>
+		</section>
+		<section>
+			<img src="http://www.iconsplace.com/icons/preview/purple/birthday-cake-256.png" />
+			<h1> Events </h1>
+			<p>(description here)</p>
+			<br><br><br>
+		</section>
+		<!-- End of Further information -->
+			
+			<!-- Footer with contacts and social media -->
+			<footer>
+				<section>
+				<br><br>
+					<h3><b>The Basement</b></h3>
+					<p><b>#-(###)###_####</b><br><br>
+						6969 Meme Street<br>
+						Planet Earth<br>
+						The Basement.com<br>
+					</p>
+				</section>
+				<section>
+				<br><br>
+					<h3>Connect to Memes</h3>
+					<br><br><br>
+						<ul class="social">
+							<li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/facebook1.png"/></a></li>
+							<li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/twitter1.png"/></a></li>
+							<li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/youtube1.png"/></a></li>
+						</ul>
+				</section>
+				<section>
+					<img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/glowing-purple-neon-icons-people-things/113910-glowing-purple-neon-icon-people-things-stairs.png"/>
+				</section>
+			</footer>
+			<!-- End of Footer -->
+			
+			<!-- Copy rights -->
+			<footer class="second">
+				<p>© 2017 The Basement
+			</footer>
+
+<p> 
+	<img class="image3" src="testimage.jpg" width="2000" height="720">
+</p>
+
+	</body> <!-- End of Visual Elements --> 
+
+</html> <!-- End of .html File -->
